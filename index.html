@@ -49,7 +49,7 @@
             <section class="hero">
                 <div class="container">
                     <h1 class="hero-title">Эффективные решения <br/> для вашего бизнеса</h1>
-                    <a href="" class="btn primary" data-open-modal>Заказать услугу</a>
+                    <button class="btn primary" data-modal-open>Заказать услугу</button>
                 </div>
             </section>
 
@@ -384,32 +384,13 @@
                     </div>
                 </div>
         </footer>
-    <div class="backdrop is-hidden" data-backdrop>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore tempore expedita, distinctio neque ut quae velit quo animi ipsum facere voluptatem architecto assumenda eligendi explicabo ullam pariatur. A, omnis esse?</p>
-            <button data-close-modal>Закрыть</button>
+            <button data-modal-close>Закрыть</button>
         </div>
     </div>
     <!-- Скрипты -->
-    <script>
-        const refs = {
-                openModalBtn: document.querySelector("[data-open-modal]"),
-                closeModalBtn: document.querySelector("[data-close-modal]"),
-                backdrop: document.querySelector("[data-backdrop]"),
-            };
-
-            refs.openModalBtn.addEventListener("click", toggleModal);
-            refs.closeModalBtn.addEventListener("click", toggleModal);
-
-            refs.backdrop.addEventListener("click", logBackdropClick);
-
-            function toggleModal() {
-                refs.backdrop.classList.toggle("is-hidden");
-            }
-
-            function logBackdropClick() {
-                console.log("Это клик в бекдроп");
-            }
-    </script>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
