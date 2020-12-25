@@ -552,6 +552,9 @@ img {
   letter-spacing: 0.03em;
   border: none;
   padding: 6px 22px;
+  box-shadow: none;
+  transition: color 250ms var(--standart-animation), background-color 250ms var(--standart-animation),
+    box-shadow 250ms var(--standart-animation);
 }
 
 .btn.secondary:hover,
